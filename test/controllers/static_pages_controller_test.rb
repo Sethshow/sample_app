@@ -1,5 +1,8 @@
 require "test_helper"
 
+def setup
+    @base_title = "Ruby on Rails Tutorial Sample App"
+  end
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   
   test "should get home" do

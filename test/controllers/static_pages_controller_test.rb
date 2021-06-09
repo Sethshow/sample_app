@@ -5,18 +5,16 @@ def setup
   end
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   
-<<<<<<< HEAD
+
   def setup
     @base_title = "Ruby on Rails Tutorial Sample App"
   end
-=======
+
   test "should get root" do
     get root_url
     assert_response :success
   end
-  
-  
->>>>>>> 3.4.3_exercise
+    
   test "should get home" do
     get static_pages_home_url
     assert_response :success
@@ -35,13 +33,10 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", "About | #{@base_title}"
   end
   
-<<<<<<< HEAD
-=======
   test "should get contact" do
     get static_pages_contact_url
     assert_response :success
     assert_select "title", "Contact | Ruby on Rails Tutorial Sample App"
   end
   
->>>>>>> 3.4.3_exercise
 end
